@@ -1,0 +1,117 @@
+*,*:after,*:before
+  box-sizing: border-box
+  outline: none
+h1,h2,h3,h4,h5,h6,p,span,ul,ol
+  padding: 0
+  margin: 0
+
+h1,h2,h3,h4,h5,h6
+  font-family: $proxima-bld
+
+.h1,.h2,.h3,.h4,.h5,.h6
+  font-family: $muller-bld
+
+.clearfix:after
+  content: ''
+  display: table
+  clear: both
+
+.container
+  max-width: 940px
+  width: 80%
+  margin: 0 auto
+
+.link
+  text-decoration: none
+  color: $dark
+  font-size: 14px
+  cursor: pointer
+  &:hover
+    color: $red
+.active
+  &-link
+    color: $red
+  
+.btn
+  border: none
+  color: #ffffff
+  border-radius: 5px
+  font-family: 'ProximaNovaBld'
+  padding: 9px 0
+  outline: none
+  cursor: pointer
+  &-red
+    width: 140px
+    background: linear-gradient(to bottom, rgba(226,36,36,1) 0%, rgba(231,56,39,1) 0%, rgba(196,13,13,1) 100%)
+    font-size: 12px
+    &_title
+      width: 299px
+      padding: 25px 0
+      font-size: 18px
+    &:hover
+      background: linear-gradient(to top, rgba(226,36,36,1) 0%, rgba(231,56,39,1) 0%, rgba(196,13,13,1) 100%)
+  &-tariffs
+    max-width: 180px
+    width: 100%
+    padding: 19px 0
+    font-size: 18px
+    font-family: $muller-bld
+    margin-top: 15px
+    &-light
+      background: linear-gradient(to top, #ff2e00, #ff4c25)
+      &:hover,&~button:hover
+        background: linear-gradient(to bottom, #ff2e00, #ff4c25)
+        box-shadow: 0px 8px 20px 0 #ff2e00
+    &-green
+      background: linear-gradient(to top, #008e00, #00a300)
+      &:hover,&~button:hover
+        background: linear-gradient(to bottom, #008e00, #00a300)
+        box-shadow: 0px 8px 20px 0 #008e00
+    &-blue
+      background-image: linear-gradient(to top, #001c67, #02388f)
+      &:hover,&~button:hover
+        background-image: linear-gradient(to bottom, #001c67, #02388f)
+        box-shadow: 0px 8px 20px 0 #001c67
+    &_title
+      padding: 20px
+      max-width: 299px
+      width: 100%
+      font-size: 18px
+
+.title-content
+  text-align: center
+  font-size: 30px
+  margin-bottom: 80px
+
+.section
+  padding: 100px 0
+
+form
+  max-width: 320px
+  margin: 0 auto
+  & h4
+      font-size: 18px
+      margin-bottom: 20px
+  & label
+      display: block
+      font-size: 14px
+      line-height: 22px
+      font-family: $muller-lt
+      margin: 11px 0
+  & input,& textarea
+      width: 100%
+      height: 50px
+      border: 1px solid #ddd
+      border-radius: 5px
+      padding: 10px
+  & textarea
+      height: 80px
+  & .btn
+      width: 100%
+      padding: 21px 10px
+      font-size: 18px
+      margin: 30px 0 0
+  & p
+      text-align: center
+      font-size: 13px
+      margin-top: 17px

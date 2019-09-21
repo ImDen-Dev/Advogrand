@@ -1,0 +1,1564 @@
+@font-face {
+  font-family: 'MullerMed';
+  src: url("../fonts/Muller/MullerMedium.eot");
+  src: local("Muller Medium"), local("MullerMedium"), url("../fonts/Muller/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerMedium.woff") format("woff"), url("../fonts/Muller/MullerMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerLT';
+  src: url("../fonts/Muller/MullerLight.eot");
+  src: local("Muller Light"), local("MullerLight"), url("../fonts/Muller/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerLight.woff") format("woff"), url("../fonts/Muller/MullerLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerBld';
+  src: url("../fonts/Muller/MullerBold.eot");
+  src: local("Muller Bold"), local("MullerBold"), url("../fonts/Muller/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerBold.woff") format("woff"), url("../fonts/Muller/MullerBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerReg';
+  src: url("../fonts/Muller/MullerRegular.eot");
+  src: local("Muller Bold"), local("MullerBold"), url("../fonts/Muller/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerRegular.woff") format("woff"), url("../fonts/Muller/MullerRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaBld';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaLt';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaReg';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ProximaNovaBld", sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "MullerBld", sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 940px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #e61010;
+}
+
+.active-link {
+  color: #e61010;
+}
+
+.btn {
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: 'ProximaNovaBld';
+  padding: 9px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-red {
+  width: 140px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e22424), color-stop(0%, #e73827), to(#c40d0d));
+  background: linear-gradient(to bottom, #e22424 0%, #e73827 0%, #c40d0d 100%);
+  font-size: 12px;
+}
+
+.btn-red_title {
+  width: 299px;
+  padding: 25px 0;
+  font-size: 18px;
+}
+
+.btn-red:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e22424), color-stop(0%, #e73827), to(#c40d0d));
+  background: linear-gradient(to top, #e22424 0%, #e73827 0%, #c40d0d 100%);
+}
+
+.btn-tariffs {
+  max-width: 180px;
+  width: 100%;
+  padding: 19px 0;
+  font-size: 18px;
+  font-family: "MullerBld", sans-serif;
+  margin-top: 15px;
+}
+
+.btn-tariffs-light {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff2e00), to(#ff4c25));
+  background: linear-gradient(to top, #ff2e00, #ff4c25);
+}
+
+.btn-tariffs-light:hover, .btn-tariffs-light ~ button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff2e00), to(#ff4c25));
+  background: linear-gradient(to bottom, #ff2e00, #ff4c25);
+  -webkit-box-shadow: 0px 8px 20px 0 #ff2e00;
+          box-shadow: 0px 8px 20px 0 #ff2e00;
+}
+
+.btn-tariffs-green {
+  background: -webkit-gradient(linear, left bottom, left top, from(#008e00), to(#00a300));
+  background: linear-gradient(to top, #008e00, #00a300);
+}
+
+.btn-tariffs-green:hover, .btn-tariffs-green ~ button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#008e00), to(#00a300));
+  background: linear-gradient(to bottom, #008e00, #00a300);
+  -webkit-box-shadow: 0px 8px 20px 0 #008e00;
+          box-shadow: 0px 8px 20px 0 #008e00;
+}
+
+.btn-tariffs-blue {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#001c67), to(#02388f));
+  background-image: linear-gradient(to top, #001c67, #02388f);
+}
+
+.btn-tariffs-blue:hover, .btn-tariffs-blue ~ button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#001c67), to(#02388f));
+  background-image: linear-gradient(to bottom, #001c67, #02388f);
+  -webkit-box-shadow: 0px 8px 20px 0 #001c67;
+          box-shadow: 0px 8px 20px 0 #001c67;
+}
+
+.btn-tariffs_title {
+  padding: 20px;
+  max-width: 299px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.title-content {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+form h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "MullerLt", sans-serif;
+  margin: 11px 0;
+}
+
+form input, form textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form textarea {
+  height: 80px;
+}
+
+form .btn {
+  width: 100%;
+  padding: 21px 10px;
+  font-size: 18px;
+  margin: 30px 0 0;
+}
+
+form p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 17px;
+}
+
+/* header style */
+body {
+  font-family: 'ProximaNovaReg', sans-serif;
+  font-weight: 300;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+strong {
+  font-weight: bold;
+  font-family: 'ProximaNovaBld', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  background: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: 'ProximaNovaLt';
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 25px;
+}
+
+.header-content {
+  padding-top: 70px;
+  padding-bottom: 15px;
+}
+
+.header-content p {
+  font-family: "ProximaNovaLt", sans-serif;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.header-content strong {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.header-content strong .link {
+  font-size: 18px;
+}
+
+.android, .apple {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e61010;
+  border-radius: 5px;
+}
+
+.android {
+  background: url("../images/social/android.png") no-repeat center center;
+}
+
+.apple {
+  background: url("../images/social/apple.png") no-repeat center center;
+  margin-left: 10px;
+}
+
+.android:hover {
+  background: #e61010 url("../images/social/android-white.png") no-repeat center center;
+}
+
+.apple:hover {
+  background: #e61010 url("../images/social/apple-white.png") no-repeat center center;
+}
+
+/* header style */
+/* title style */
+.title {
+  background: url("../images/bg/main.jpg") no-repeat center center;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.title .description {
+  width: 50%;
+}
+
+.title .description h1 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.title .description h1 strong {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.title .description p {
+  max-width: 385px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "ProximaNovaLt", sans-serif;
+  margin: 40px 0;
+}
+
+/* title style */
+/* services style */
+.services-title {
+  color: #1c1c1c;
+}
+
+.services-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-item {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 84px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.services-item img {
+  margin-right: 20px;
+}
+
+.services-item p {
+  font-family: "ProximaNovaLt", sans-serif;
+  font-size: 16px;
+}
+
+/* services style */
+/* about style */
+.about {
+  background: url("../images/bg/themis.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.about-description {
+  font-family: "ProximaNovaLt", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 89%;
+  margin: 0 auto 20px;
+}
+
+.about-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 69px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-item {
+  text-align: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.about-item strong {
+  font-size: 48px;
+}
+
+.about-item strong span {
+  font-size: 23px;
+}
+
+.about-text {
+  font-family: "ProximaNovaLt", sans-serif;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* about style */
+/* work style */
+.work {
+  background-color: #f5f5f5;
+}
+
+.work-title {
+  color: #1c1c1c;
+}
+
+.work-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work-item {
+  text-align: center;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.work-item p {
+  font-family: "ProximaNovaLt", sans-serif;
+  font-size: 16px;
+  margin-top: 50px;
+  line-height: 22px;
+  color: #1c1c1c;
+}
+
+/* work style */
+.advantages-title {
+  color: #1c1c1c;
+}
+
+.advantages-list {
+  border-collapse: collapse;
+  float: left;
+  width: 66%;
+}
+
+.advantages-item {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.advantages-item:last-child {
+  border-bottom: none;
+}
+
+.advantages-item td {
+  padding: 15px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.advantages-item td strong {
+  font-size: 14px;
+}
+
+.advantages-item td:first-child {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.advantages-item td:nth-child(2n) {
+  background-color: #26b83a;
+  color: #fff;
+  border: 1px solid #26b83a;
+}
+
+.advantages-number {
+  float: right;
+  margin-top: 15px;
+}
+
+.advantages-number h5 {
+  font-size: 16px;
+}
+
+.advantages-block {
+  margin-top: 15px;
+}
+
+.advantages-block img, .advantages-block p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.advantages-block img {
+  margin-right: 10px;
+}
+
+.advantages-btn {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 16px 0;
+}
+
+/* consultation style */
+.consultation {
+  background: url("../images/bg/paper.jpg") center center no-repeat/cover;
+  color: #fff;
+}
+
+.consultation-block, .consultation-apps {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.consultation-block {
+  width: 69%;
+}
+
+.consultation-block h2 {
+  text-align: left;
+  width: 80%;
+}
+
+.consultation-list {
+  color: #e41e1e;
+  font-family: "MullerMed", sans-serif;
+  margin-left: 17px;
+  font-size: 18px;
+}
+
+.consultation-list li {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.consultation-list li span {
+  color: #fff;
+  font-family: "MullerReg", sans-serif;
+}
+
+.consultation-list li span a {
+  color: #fff;
+}
+
+.consultation-list li span a:hover {
+  text-decoration: none;
+}
+
+.consultation-apps {
+  width: 206px;
+  text-align: center;
+}
+
+.consultation-apps a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+/* consultation style */
+/* reviews style */
+.arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 99;
+  display: block;
+  width: 20px;
+  height: 14px;
+}
+
+.arrow-prev {
+  left: -70px;
+  background-image: url("../images/left-arrow.png");
+}
+
+.arrow-prev:hover {
+  background-image: url("../images/left-arrow-red.png");
+}
+
+.arrow-next {
+  right: -70px;
+  background-image: url("../images/right-arrow.png");
+}
+
+.arrow-next:hover {
+  background-image: url("../images/right-arrow-red.png");
+}
+
+.pick {
+  display: none;
+  padding: 8px 10px;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.reviews {
+  background-color: #f5f5f5;
+  color: #1c1c1c;
+  font-family: "MullerBld", sans-serif;
+}
+
+.reviews-links {
+  text-align: center;
+  display: block;
+}
+
+.reviews-links .link {
+  padding: 10px 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+.reviews-slider {
+  position: relative;
+  width: 90%;
+  margin: 60px auto 0;
+}
+
+.reviews-slider .slide {
+  margin: 0 10px;
+}
+
+.reviews-slider .slide a img {
+  width: auto;
+  max-width: 100%;
+}
+
+.reviews-slide__link p {
+  font-family: "MullerReg", sans-serif;
+  font-size: 13px;
+  margin-top: 17px;
+}
+
+/* reviews style */
+/* partners style */
+.partners-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.partners-slide {
+  position: relative;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.partners-slide:hover .partners-text {
+  top: 0;
+}
+
+.partners-slide img {
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.partners-text {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #26b83a;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.partners-text p {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.partners-text p span {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "MullerLt", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 13px;
+}
+
+.active {
+  -webkit-box-shadow: 0 0 0 2px #e41e1e;
+          box-shadow: 0 0 0 2px #e41e1e;
+  border-radius: 5px;
+  color: #e41e1e;
+}
+
+/* partners style */
+/* tariffs style */
+.tariffs {
+  background-color: #f5f5f5;
+}
+
+.tariffs-title {
+  text-align: left;
+  margin-bottom: 25px;
+  color: #313131;
+}
+
+.tariffs-title-small {
+  color: #313131;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.tariffs-description, .tariffs-changes, .tariffs-compare-rates, .tariffs-all {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tariffs-descriptions {
+  margin-bottom: 37px;
+}
+
+.tariffs-description {
+  color: #313131;
+  font-family: "MullerReg", sans-serif;
+  font-size: 16px;
+}
+
+.tariffs-changes {
+  float: right;
+  font-family: "MullerMed", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.tariffs-changes p {
+  padding: 10px 15px;
+}
+
+.tariffs-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tariffs-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 52px 50px 50px 54px;
+}
+
+.tariffs-services {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+.tariffs-service {
+  font-family: "MullerLt", sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.tariffs-service span {
+  font-family: "MullerMed", sans-serif;
+  text-align: right;
+}
+
+.tariffs-service:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tariffs-card-title {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.tariffs-card-title img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.tariffs-card-title h4 {
+  font-size: 19px;
+  font-family: "MullerReg", sans-serif;
+  margin-bottom: 29px;
+}
+
+.tariffs-card-title h4 span {
+  font-family: "MullerBld", sans-serif;
+}
+
+.tariffs-card-buttons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.tariffs-price {
+  font-size: 13px;
+  font-family: "MullerLt", sans-serif;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.tariffs-price span {
+  font-size: 24px;
+  font-family: "MullerBld", sans-serif;
+}
+
+.compare {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.compare .tariffs-rate {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 10px;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.compare .tariffs-service {
+  font-size: 11px;
+}
+
+.compare .tariffs-card-title {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.compare .tariffs-card-buttons {
+  margin-top: 34px;
+}
+
+/* tariffs style */
+/* contacts style */
+.contacts {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f5f5f5), color-stop(50%, white));
+  background: linear-gradient(to right, #f5f5f5 50%, white 50%);
+}
+
+.contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts-form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 30px;
+}
+
+.contacts-address {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 160px;
+}
+
+.contacts-address h3 {
+  font-size: 30px;
+  margin-bottom: 68px;
+}
+
+.contacts-address a {
+  display: block;
+  font-size: 17px;
+  font-family: "MullerBld", sans-serif;
+  margin-bottom: 20px;
+}
+
+.contacts-text {
+  font-family: "MullerReg", sans-serif;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.contacts-time {
+  font-family: "MullerMed", sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+/* contacts style */
+/* footer style */
+.footer {
+  background-color: #0e0e0e;
+  padding: 47px 0;
+  text-align: center;
+}
+
+/* footer style */
+/* Media queries */
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-wrapper.active-modal .modal-body {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  max-width: 470px;
+  width: 100%;
+  max-height: 440px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 75px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-body img {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.modal-body p {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "MullerLt", sans-serif;
+}
+
+.modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 32px;
+  cursor: pointer;
+  line-height: 19px;
+}
+
+.modal-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.modal-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-title {
+  font-size: 18px;
+}
+
+#modal-v .modal-body {
+  max-width: 680px;
+  max-height: 490px;
+  padding: 30px 35px;
+}
+
+#modal-v .modal-close {
+  top: 15px;
+  right: 15px;
+}
+
+#modal-v .modal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+#modal-v .modal-card img {
+  max-width: 48px;
+  margin: 0;
+}
+
+#modal-v .modal-card p {
+  margin: 0 0 0 21px;
+  text-transform: capitalize;
+}
+
+#letter .modal-body {
+  max-height: 550px;
+  padding: 13px 75px;
+}
+
+#letter .modal-form form p, #consultation .modal-form form p {
+  text-align: center;
+}
+
+#success-error .modal-body {
+  padding: 30px;
+  max-width: 240px;
+}
+
+#success-error .modal-content {
+  text-align: center;
+}
+
+#success-error .modal-content img {
+  width: 130px;
+}
+
+#success-error .modal-content p {
+  text-align: center;
+  padding: 0;
+}
+
+.error {
+  color: #e61010;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1090px) {
+  nav ul li {
+    margin-right: 10px;
+  }
+  .partners-text p span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .tariffs-services {
+    margin: 0 12px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav ul li:last-child {
+    display: none;
+  }
+  .advantages-list {
+    float: none;
+    width: 100%;
+  }
+  .advantages-number {
+    float: none;
+    margin-top: 50px;
+  }
+  .advantages-blocks, .advantages-btn {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .advantages-blocks {
+    margin-right: 150px;
+  }
+  .advantages-btn {
+    max-width: 300px;
+    margin: 0;
+  }
+  .consultation-block {
+    display: block;
+    width: 100%;
+  }
+  .consultation-apps {
+    width: 100%;
+  }
+  .consultation-apps a {
+    display: inline-block;
+    width: 50%;
+  }
+  .reviews-links .link {
+    margin: 0 9px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  nav ul li:nth-child(5) {
+    display: none;
+  }
+  .header-content .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .header-content .flex .logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .header-content p {
+    margin: 0;
+  }
+  .header-content strong {
+    margin: 0;
+  }
+  .services-item {
+    padding-left: 39px;
+    margin-bottom: 70px;
+  }
+  .advantages-blocks {
+    margin-right: 80px;
+  }
+  .reviews-links .link {
+    margin: 0;
+  }
+  .reviews-slider .slide {
+    margin: 0 5px;
+  }
+  .tariffs-service {
+    font-size: 11px;
+  }
+  .tariffs-description {
+    font-size: 14px;
+  }
+  .contacts-address {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  nav ul li {
+    margin-right: 25px;
+  }
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+  .title .description {
+    width: 100%;
+  }
+  .services-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .about-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+  .advantages-blocks {
+    margin-right: 50px;
+  }
+  .advantages-btn {
+    max-width: 180px;
+  }
+  .arrow-prev {
+    left: -40px;
+  }
+  .arrow-next {
+    right: -40px;
+  }
+  .reviews-links .link {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .tariffs-descriptions {
+    display: none;
+  }
+  .tariffs-rate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 10px;
+    -ms-flex-preferred-size: 33.3%;
+        flex-basis: 33.3%;
+  }
+  .tariffs-service {
+    font-size: 11px;
+  }
+  .tariffs-card-title {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .tariffs-card-buttons {
+    margin-top: 34px;
+  }
+  .contacts-form form button {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  nav ul {
+    display: none;
+  }
+  .header-content .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-content strong {
+    margin: 10px 0 15px;
+  }
+  .title .description {
+    text-align: center;
+  }
+  .title .description p {
+    margin: 40px auto;
+  }
+  .services-item {
+    padding-left: 25px;
+    margin-bottom: 60px;
+  }
+  .work-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .work-item p {
+    margin-top: 23px;
+  }
+  .advantages-blocks {
+    margin-right: 0;
+  }
+  .advantages-btn {
+    max-width: none;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .pick {
+    display: block;
+  }
+  .reviews-links {
+    display: none;
+  }
+  .reviews-links .link {
+    display: block;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 0;
+  }
+  .active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  .contacts-address {
+    padding-left: 35px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .container {
+    width: 95%;
+  }
+  .title .description h1 {
+    font-size: 24px;
+  }
+  .title .description h1 strong {
+    font-size: 28px;
+  }
+  .title .description p {
+    font-size: 16px;
+  }
+  .services-content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .services-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .about-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .advantages-number {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advantages-btn {
+    display: block;
+    max-width: none;
+    width: 100%;
+    margin: 25px auto 0;
+  }
+  .consultation-apps a {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .reviews-slider {
+    width: 80%;
+  }
+  .partners-slider {
+    width: 80%;
+  }
+  .arrow-prev {
+    left: -30px;
+  }
+  .arrow-next {
+    right: -30px;
+  }
+  .contacts {
+    padding: 50px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #f5f5f5), color-stop(45%, white));
+    background: linear-gradient(to bottom, #f5f5f5 55%, white 45%);
+  }
+  .contacts-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-form {
+    padding-right: 0px;
+  }
+  .contacts-address {
+    text-align: center;
+    padding: 0;
+    margin-top: 35px;
+  }
+  .contacts-address h3 {
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews-slider .slide a img {
+    width: 100%;
+  }
+  #letter .modal-body, #consultation .modal-body {
+    padding: 13px 22px;
+  }
+  #letter .modal-body form .btn, #consultation .modal-body form .btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .advantages-number {
+    width: 95%;
+  }
+  .advantages-item td:first-child {
+    padding-right: 7px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

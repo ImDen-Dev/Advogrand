@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/normalize.css">
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="container flex">
+                <strong>
+                    <a class="link" href="tel:+74993228580">+7 499 322-85-80</a>
+                </strong>
+                <ul>
+                    <li><a class="link" href="#work">Как&nbsp;мы&nbsp;работаем</a></li>
+                    <li><a class="link" href="#advantages">Преимущества</a></li>
+                    <li><a class="link" href="#reviews">Отзывы</a></li>
+                    <li><a class="link" href="#partners">Партнеры</a></li>
+                    <li><a class="link" href="#tariffs">Тарифы</a></li>
+                    <li><a class="link" href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="btn btn-red" type="button" data-toggle="modal" data-modal="#consultation">Перезвоните мне</button>
+                <!-- /.btn btn-red -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="header-content">
+            <div class="container flex">
+                <a href="/" class="logo"><img src="./images/logo.png" alt="Advogrand" class="logo-img"></a>
+                <!-- /.logo -->
+                <p>Ваш личный юрист всегда на связи</p>
+                <strong><a href="tel:+74993228580" class="link">+7 499 322-85-80</a> <!-- /.link --></strong>
+                <div class="links"><a href="#" class="android"></a><a href="#" class="apple"></a></div>
+                <!-- /.links -->
+            </div>
+        </div>
+        <!-- /.header-content -->
+    </header>
+    <!-- /.header -->
+    <section class="title">
+        <div class="container">
+            <div class="description">
+                <h1>Годовой абонемент на услуги <strong>&laquo;личного&nbsp;юриста&raquo;</strong> </h1>
+                <p>24 часа в сутки Ваш личный юрист &ndash; <strong>Advogrand</strong> на связи всего
+                    <strong>за&nbsp;12&nbsp;рублей&nbsp;в&nbsp;сутки</strong></p>
+                <button class="btn btn-red btn-red_title" type="button" data-toggle="modal" data-modal="#letter">Хочу &laquo;личного юриста&raquo;!</button>
+                <!-- /.btn btn-red -->
+            </div>
+            <!-- /.description -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.title -->
+    <section class="services section">
+        <div class="container">
+            <h2 class="title-content services-title">Услуги предоставляемые сервисом Advogrand</h2>
+            <!-- /.title-content services-title -->
+            <div class="services-content">
+                <div class="services-item" data-toggle="modal" data-modal="#tab-1">
+                    <img src="./images/services/professor-consultation.png" alt="professor-consultation">
+                    <p class="link">Незаконно <br>выписали штраф</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-2">
+                    <img src="./images/services/phone-call.png" alt="phone-call">
+                    <p class="link">Проблемы <br>с возвратом товара</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-3">
+                    <img src="./images/services/file.png" alt="file">
+                    <p class="link">Не выплачивают <br>зарплату</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-4">
+                    <img src="./images/services/tactics.png" alt="tactics">
+                    <p class="link">Бездействуют <br>государственные органы</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-5">
+                    <img src="./images/services/work-communication.png" alt="work-communication">
+                    <p class="link">Не выплачивает <br>страховая компания</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-6">
+                    <img src="./images/services/law-book.png" alt="law-book">
+                    <p class="link">Преследуют <br>коллекторы</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-7">
+                    <img src="./images/services/exam.png" alt="exam">
+                    <p class="link">Не оказали должной <br>медицинской помощи</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item" data-toggle="modal" data-modal="#tab-8">
+                    <img src="./images/services/lawyer.png" alt="lawyer">
+                    <p class="link">Затопили <br>соседей</p>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+                <div class="services-item">         
+                    <img src="./images/services/balance.png" alt="balance">
+                    <a class="link scroll" href="#reviews"><strong>И еще в тысячах <br>других ситуаций...</strong></a>
+                    <!-- /.link -->
+                </div>
+                <!-- /.service-item -->
+            </div>
+            <!-- /.services-content -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.services -->
+    <section class="about section">
+        <div class="container">
+            <h2 class="about-content title-content">О сервисе Advogrand</h2>
+            <!-- /.about-content title-content -->
+            <p class="about-description">В составе нашей команды трудятся профессионалы, имеющие огромный опыт реальной
+                юридической практики.</p>
+            <p class="about-description">Благодаря этому мы всегда можем найти юридически верное решение, защищающее
+                интересы, сглаживающее конфликтные ситуации.</p>
+            <!-- /.about-description -->
+            <p class="about-description">Наше абонентское обслуживание позволяет сохранить нашим клиентам время, деньги
+                и душевное спокойствие, ведь ваши интересы находятся под круглосуточной защитой &laquo;личного
+                адвоката&raquo;</p>
+            <!-- /.about-description -->
+            <div class="about-block">
+                <div class="about-item">
+                    <strong>9</strong>
+                    <p class="about-text">лет на российском рынке</p>
+                    <!-- /.about-text -->
+                </div>
+                <div class="about-item">
+                    <strong>289</strong>
+                    <p class="about-text">квалифицированых специалистов</p>
+                    <!-- /.about-text -->
+                </div>
+                <div class="about-item">
+                    <strong><span>></span> 2,5 <span>млн</span></strong>
+                    <p class="about-text">решеных вопросов</p>
+                    <!-- /.about-text -->
+                </div>
+                <div class="about-item">
+                    <strong>3</strong>
+                    <p class="about-text">работаем в 3-х странах мира</p>
+                    <!-- /.about-text -->
+                </div>
+            </div>
+            <!-- /.about-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.about section -->
+    <section class="work section" id="work">
+        <div class="container">
+            <h2 class="title-content work-title">Как оказывается услуга</h2>
+            <!-- /.title-content work-title -->
+            <div class="work-block">
+                <div class="work-item">
+                    <img src="./images/work/1.png" alt="service">
+                    <p>Появился вопрос &ndash;<br> звоните по бесплатному номеру</p>
+                </div>
+                <!-- /.work-item -->
+                <div class="work-item">
+                    <img src="./images/work/2.png" alt="service">
+                    <p>Описываете ситуацию&nbsp;&ndash;<br> получаете ответ в течении 15 минут</p>
+                </div>
+                <!-- /.work-item -->
+                <div class="work-item">
+                    <img src="./images/work/3.png" alt="service">
+                    <p><strong>Ваш вопрос решен!</strong></p>
+                </div>
+                <!-- /.work-item -->
+            </div>
+            <!-- /.work-block -->
+        </div>
+    </section>
+    <!-- /.work section -->
+    <section class="advantages section" id="advantages">
+        <div class="container clearfix">
+            <h2 class="title-content advantages-title">Преимущества сервиса Advogrand по сравнению с другими
+                юридическими компаниями</h2>
+            <table class="advantages-list">
+                <tbody>
+                    <tr class="advantages-item">
+                        <td></td>
+                        <td><strong>Advogrand</strong></td>
+                        <td><strong>Юридичекие компании</strong></td>
+                    </tr>
+                    <tr class="advantages-item">
+                        <td>Одна консультация</td>
+                        <td>От 120 руб</td>
+                        <td>Более 1000 руб</td>
+                    </tr>
+                    <tr class="advantages-item">
+                        <td>Дополнительные услуги</td>
+                        <td>Входят в абонемент</td>
+                        <td>Оплачиваются отдельно</td>
+                    </tr>
+                    <tr class="advantages-item">
+                        <td>Решение вопроса</td>
+                        <td>По телефону</td>
+                        <td>В офис</td>
+                    </tr>
+                    <tr class="advantages-item">
+                        <td>Время работы</td>
+                        <td>Круглосуточно</td>
+                        <td>С 9:00 до 18:00</td>
+                    </tr>
+                    <tr class="advantages-item">
+                        <td>Оплата</td>
+                        <td>Всего 1 раз в год</td>
+                        <td>Каждый раз при обращении</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="advantages-number">
+                <h5>Нашими услугами уже пользуются</h5>
+                <div class="advantages-blocks">
+                    <div class="advantages-block">
+                        <img src="./images/advantages/1.png" alt="advantages">
+                        <p><strong>208 000 </strong>- мужчин</p>
+                    </div>
+                    <div class="advantages-block">
+                        <img src="./images/advantages/2.png" alt="advantages">
+                        <p><strong>137 000 </strong>- женщин</p>
+                    </div>
+                    <div class="advantages-block">
+                        <img src="./images/advantages/3.png" alt="advantages">
+                        <p><strong>63 000 </strong>- семейных пар</p>
+                    </div>
+                    <div class="advantages-block">
+                        <img src="./images/advantages/4.png" alt="advantages">
+                        <p><strong>13 500 </strong>- предпринимателей</p>
+                    </div>
+                </div>
+                <button class="btn btn-red advantages-btn" type="button" data-toggle="modal" data-modal="#letter">Узнать больше!</button>
+            </div>
+        </div>
+    </section>
+    <section class="consultation section">
+        <div class="container">
+            <div class="consultation-block">
+                <h2 class="title-content consultation-title h2">Хотите получить бесплатную юридическую консультацию?
+                </h2>
+                <ol class="consultation-list">
+                    <li><span>Скачайте наше <a href="#">приложение Reworld</a> для iOS и Android </span></li>
+                    <li><span>Посмотрите один из 150 познавательных роликов</span></li>
+                    <li><span>Введите Ваш номер телефона и с Вами свяжется юрист для консультации</span></li>
+                </ol>
+            </div>
+            <div class="consultation-apps"><a href="/"><img src="./images/Android-app-store.png"
+                        alt="Android-app-store"></a><a href="/"><img src="./images/iOS-app-store.png"
+                        alt="iOS-app-store"></a></div>
+        </div>
+    </section>
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <h2 class="title-content reviews-title">Отзывы</h2>
+            <!-- /.title-content reviews-title -->
+            <div class="pick">Все:</div>
+            <div class="reviews-links">
+
+                <a href="#" class="link" data-target="health">здравоохранение</a>
+                <!-- /.links -->
+                <a href="#" class="link" data-target="business">бизнес</a>
+                <!-- /.links -->
+                <a href="#" class="link" data-target="family">семья</a>
+                <!-- /.links -->
+                <a href="#" class="link" data-target="communal_services">жкх</a>
+                <!-- /.links -->
+                <a href="#" class="link" data-target="realty">недвижимость</a>
+                <!-- /.links -->
+                <a href="#" class="link active" data-target="all">все</a>
+                <!-- /.links -->
+            </div>
+            <!-- /.reviews-links -->
+            <div class="reviews-slider">
+
+                <div class="slide health" data-toggle="modal" data-modal="#modal-v"  
+                data-card="./images/cards/personal-standard.jpg" 
+                data-text="personal" 
+                data-video='<iframe src="http://www.youtube.com/embed/GEZ39uoVqTY" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/health/d5a7a9d7d8847f866fde9afa38b79a15.jpg" alt="slide">
+                        <p>История Advogrand. История применения. Влада Лесова</p>
+                    </a>
+                </div>
+
+                <div class="slide health" data-toggle="modal" data-modal="#modal-v"  
+                data-card="./images/cards/family-standard.jpg"
+                data-text="family"
+                data-video='<iframe src="http://www.youtube.com/embed/7NAbkrADKxk" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/health/bea236372d27251c3a9a1a2ad8de0c7e.jpg" alt="slide">
+                        <p>История Advogrand</p>
+                    </a>
+                </div>
+
+                <div class="slide health" data-toggle="modal" data-modal="#modal-v" data-card="./images/cards/family-standard.jpg"
+                data-text="family"
+                data-video='<iframe src="http://www.youtube.com/embed/ZH821_RE128" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/health/142da85c03e8087ffe9cc31d1ff70206.jpg" alt="slide">
+                        <p>История применения карты AdvoGrand. Не хотели принимать в поликлинике!</p>
+                    </a>
+                </div>
+
+                <div class="slide business" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/personal-standard.jpg"
+                data-text="personal"
+                data-video='<iframe src="http://www.youtube.com/embed/RkhNiX5p72s" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/business/bd7cdd2e283abfae4a85d489f3a324c3.jpg" alt="slide">
+                        <p>Незаконное увольнение. Как его избежать и получить премию. Александра Сотникова.!</p>
+                    </a>
+                </div>
+
+                <div class="slide business" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/business-standard.jpg"
+                data-text="business"
+                data-video='<iframe src="http://www.youtube.com/embed/w7M2tQCNwXU" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/business/1dcb70cf0ff118f44f683b5cc80d8fae.jpg" alt="slide">
+                        <p>История Advogrand</p>
+                    </a>
+                </div>
+                <div class="slide business" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/business-standard.jpg"
+                data-text="business"
+                data-video='<iframe src="http://www.youtube.com/embed/ABFy-ekod4I" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/business/4ebfec6eb1340198fa8cef7466df7c89.jpg" alt="slide">
+                        <p>Тимофей История применения услуги Advogrand</p>
+                    </a>
+                </div>
+                <div class="slide family" data-toggle="modal" data-modal="#modal-v"data-card="./images/cards/family-standard.jpg"
+                data-text="family"
+                data-video='<iframe src="http://www.youtube.com/embed/yjxKkpUVmiY" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/family/56fdc55af5324620c8404b647cfdf490.jpg" alt="slide">
+                        <p>История Advogrand. Олеся</p>
+                    </a>
+                </div>
+                <div class="slide family" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/family-standard.jpg"
+                data-text="family"
+                data-video='<iframe src="http://www.youtube.com/embed/sH76-rdG64o" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/family/241f1c07a1f9bda23e23e65f2131c068.jpg" alt="slide">
+                        <p>История Advogrand. Антон</p>
+                    </a>
+                </div>
+                <div class="slide family" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/family-standard.jpg"
+                data-text="family"
+                data-video='<iframe src="http://www.youtube.com/embed/nvkSt9jNNRE" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/family/64ae74d94a8e9573a65874d4e0b7e545.jpg" alt="slide">
+                        <p>Взял за одну цену, а пробили дороже. Как получить моральный ущерб в 2000 руб?</p>
+                    </a>
+                </div>
+                <div class="slide communal_services" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/personal-standard.jpg"
+                data-text="personal"
+                data-video='<iframe src="http://www.youtube.com/embed/FM7CG9EA44c" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/communal_services/5bf31bee04ee2e17680c408638d709b1.jpg" alt="slide">
+                        <p>Козни недобросовестного риелтора, ИЛИ что делать, если вас выселяют с арендованного вами жилья</p>
+                    </a>
+                </div>
+                <div class="slide communal_services" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/personal-standard.jpg"
+                data-text="personal"
+                data-video='<iframe src="http://www.youtube.com/embed/tRggUdtWpiU" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/communal_services/7273bf21ce23ee2717c80ff9baf8f3db.jpg" alt="slide">
+                        <p>История применения карты AdvoGrand после затопления соседей!</p>
+                    </a>
+                </div>
+                <div class="slide communal_services" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/personal-standard.jpg"
+                data-text="personal"
+                data-video='<iframe src="http://www.youtube.com/embed/rsEBRI14eZY" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/communal_services/6893fe28636ebf37c019ffb52b961170.jpg" alt="slide">
+                        <p>История применения карты AdvoGrand - Сазида</p>
+                    </a>
+                </div>
+                <div class="slide realty" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/personal-standard.jpg"
+                data-text="personal"
+                data-video='<iframe src="http://www.youtube.com/embed/XsbssnvxZ8E" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/realty/6c26dc5ea4078a1c3fdccd18c7d4938d.jpg" alt="slide">
+                        <p>История Advogrand. История применения. Алексей Лесов</p>
+                    </a>
+                </div>
+                <div class="slide realty" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/business-standard.jpg"
+                data-text="business"
+                data-video='<iframe src="http://www.youtube.com/embed/XsTsJ-dykm0" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/realty/f0caf79cc25ca2df04ddcda01ba9d7b9.jpg" alt="slide">
+                        <p>Риэлтор отказался возвращать деньги</p>
+                    </a>
+                </div>
+                <div class="slide realty" data-toggle="modal" data-modal="#modal-v"
+                data-card="./images/cards/business-standard.jpg"
+                data-text="business"
+                data-video='<iframe src="http://www.youtube.com/embed/SF7v2wBvhTY" frameborder="0" allowfullscreen></iframe>'>
+                    <a href="#" class="link reviews-slide__link">
+                        <img src="./images/reviews/realty/fc4b35584e31708f318467e191b14348.jpg" alt="slide">
+                        <p>История применения карты AdvoGrand. Земельный вопрос</p>
+                    </a>
+                </div>
+            </div>
+            <!-- /.reviews-slider -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section reviews -->
+    <section class="section partners" id="partners">
+        <div class="container">
+            <h2 class="h2 title-content partners-title">Партнеры Advogrand</h2>
+            <div class="partners-slider">
+                <div class="partners-slide">
+                    <img src="./images/partners/0_f0780_a878a2d7_orig.png" alt="fonarev">
+                    <div class="partners-text">
+                        <p><span>«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк
+                                «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая
+                                надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти.</span></p>
+                    </div>
+                </div>
+                <div class="partners-slide">
+                    <img src="./images/partners/21.png" alt="globex">
+                    <div class="partners-text">
+                        <p><span>«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк
+                                «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая
+                                надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти.</span></p>
+                    </div>
+                </div>
+                <div class="partners-slide">
+                    <img src="./images/partners/Spartak_Moscow_1949-97.png" alt="spartak">
+                    <div class="partners-text">
+                        <p><span>«Международное физкультурно-спортивное общество «Спартак» имени Н. П. Старостина». В
+                                МФСО «Спартак» входят спортивные организации России, Украины, Беларуси, Казахстана,
+                                Кыргызстана и Азербайджана, в которых действуют спартаковские советы, клубы и
+                                центры.</span></p>
+                    </div>
+                </div>
+                <div class="partners-slide">
+                    <img src="./images/partners/bin_strakhovanie.png" alt="bin_strakhovanie">
+                    <div class="partners-text">
+                        <p><span>ООО «БИН Страхование» — универсальный российский страховщик, работающий на рынке
+                                страхования и перестрахования с 2000 года. Уставный капитал компании составляет 1,07
+                                млрд. рублей. В соответствии с лицензиями «БИН Страхование» реализует более 50 страховых
+                                продуктов.</span></p>
+                    </div>
+                </div>
+                <div class="partners-slide">
+                    <img src="./images/partners/tinkof.gif" alt="tinkof">
+                    <div class="partners-text">
+                        <p><span>«Тинькофф Банк» — современный надежный банк, работающий во всех регионах России.
+                                Сегодня «Тинькофф Банк» является участником системы страхования вкладов, участником
+                                Международных платежных систем Masterсard и Visa и имеет SQ рейтинг от Рейтингого
+                                агентства Moody’s.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section tariffs" id="tariffs">
+        <div class="container">
+            <h2 class="h2 title-content tariffs-title">Выберите тариф</h2>
+            <!-- /.h2 title-content tariffs-title -->
+            <h3 class="h3 tariffs-title-small">Вы можете оформить карту и начать пользоваться услугами уже сейчас! <br>
+            Оформление займёт всего 10 минут</h3>
+            <!-- /.h3 tariffs-title-small -->
+            <div class="tariffs-descriptions clearfix">
+                <p class="tariffs-description">Выберите годовую карту, которая Вам подходит:</p>
+                <!-- /.tariffs-description -->
+                <div class="tariffs-changes">
+                    <p class="tariffs-compare-rates link">сравнить тарифы</p>
+                    <!-- /.tariffs-compare-rates link -->
+                    <p class="tariffs-all link active">Тарифы</p>
+                    <!-- /.tariffs-all link active -->
+                </div>
+                <!-- /.tariffs-changes -->
+            </div>
+            <!-- /.tariffs-descriptions -->
+            <div class="tariffs-block">
+                <div class="tariffs-rate">
+                    <div class="tariffs-card-title">
+                    	<h4 class="h4">Персональная карта <br><span> для Вас</span></h4>
+                    	<!-- /.h4 -->
+                    	<img src="./images/cards/personal-standard.jpg" alt="personal">
+                    </div>
+                    <div class="tariffs-services">
+                        <p class="tariffs-service">Устные консультации<span>2 в месяц</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Консультации в отношении 3-х лиц<span>2 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Письменные консультации<span>2 в квартал</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Звонок юриста<span>1 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Содействие в переговорах<span>1 в месяц</span></p>
+                        <!-- /.tariffs-service -->
+                    </div>
+                    <!-- /.tariffs-services -->
+                    <div class="tariffs-card-buttons">
+                        <p class="tariffs-price">Цена: <br><span>65 $ за год</span></p>
+                        <!-- /.tariffs-price -->
+                        <button class="btn btn-tariffs btn-tariffs-light" type="button" data-toggle="modal" data-modal="#letter">Консультации</button>
+                        <!-- /.btn btn-red -->
+                        <button class="btn btn-tariffs" type="button" data-toggle="modal" data-modal="#consultation">Купить</button> 
+                        <!-- /.btn btn-red -->
+                    </div>
+                    <!-- /.tariffs-card-buttons -->
+                </div>
+                <!-- /.tariffs-rate -->
+                <div class="tariffs-rate">
+                    <div class="tariffs-card-title">
+                        <h4 class="h4">Карта <br><span>для семьи</span></h4>
+                        <!-- /.h4 -->
+                        <img src="./images/cards/family-standard.jpg" alt="family">
+                    </div>
+                    <div class="tariffs-services">
+                        <p class="tariffs-service">Устные консультации<span>3 в месяц</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Консультации в отношении 3-х лиц<span>4 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Письменные консультации<span>3 в квартал</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Звонок юриста<span>4 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Содействие в переговорах<span>2 в месяц</span></p>
+                        <!-- /.tariffs-service -->                  
+                        <p class="tariffs-service"><span>Сервис для всей семьи</span></p>
+                        <!-- /.tariffs-service -->
+                    </div>
+                    <!-- /.tariffs-services -->
+                    <div class="tariffs-card-buttons">
+                        <p class="tariffs-price">Цена: <br><span>130 $ за год</span></p>
+                        <!-- /.tariffs-price -->
+                        <button class="btn btn-tariffs btn-tariffs-green" type="button" data-toggle="modal" data-modal="#letter">Консультации</button>
+                        <!-- /.btn btn-red -->
+                        <button class="btn btn-tariffs" type="button" data-toggle="modal" data-modal="#consultation">Купить</button> 
+                        <!-- /.btn btn-red -->
+                    </div>
+                </div>
+                <!-- /.tariffs-rate -->
+                <div class="tariffs-rate">
+                    <div class="tariffs-card-title">
+                        <h4>Карта <br><span>для бизнеса</span></h4>
+                        <!-- /.h4 -->
+                        <img src="./images/cards/business-standard.jpg" alt="business">
+                    </div>
+                    <div class="tariffs-services">
+                        <p class="tariffs-service">Устные консультации<span>неограничено</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Консультации в отношении 3-х лиц<span>4 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Письменные консультации<span>3 в квартал</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Звонок юриста<span>4 в год</span></p>
+                        <!-- /.tariffs-service -->
+                        <p class="tariffs-service">Содействие в переговорах<span>неограничено</span></p>
+                        <!-- /.tariffs-service -->                  
+                        <p class="tariffs-service"><span>Рекомендуемая модель договора</span></p>
+                        <!-- /.tariffs-service -->
+                    </div>
+                    <!-- /.tariffs-services -->
+                    <div class="tariffs-card-buttons">
+                        <p class="tariffs-price">Цена: <br><span>265 $ за год</span></p>
+                        <!-- /.tariffs-price -->
+                        <button class="btn btn-tariffs btn-tariffs-blue" type="button" data-toggle="modal" data-modal="#letter">Консультации</button>
+                        <!-- /.btn btn-red -->
+                        <button class="btn btn-tariffs" type="button" data-toggle="modal" data-modal="#consultation">Купить</button> 
+                        <!-- /.btn btn-red -->
+                    </div>
+                </div>
+                <!-- /.tariffs-rate -->
+            </div>
+            <!-- /.tariffs-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section tariffs -->
+    <section class="section contacts" id="contacts">
+        <div class="container contacts-wrapper">
+            <div class="contacts-form">
+                <form action="#">
+                    <h4 class="h4">Напишите нам письмо или задайте свой вопрос</h4>
+                    <!-- /.h4 -->
+                    <label for="name">Введите своё имя</label>
+                    <input required type="text" name="name" id="name">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input required type="tel" name="phone" id="phone">
+                    <label for="message">Сообщение или вопрос</label>
+                    <textarea name="message" id="message"></textarea>
+                    <!-- /# -->
+                    <button class="btn btn-red" type="submit">Заказать звонок консультанта</button>
+                    <!-- /.btn btn-red -->
+                    <p>Перезвоним вам в течении 5 минут</p>
+                </form>
+            </div>
+            <!-- /.contacts-form -->
+            <div class="contacts-address">
+                <h3 class="h3">Контакты</h3>
+                <!-- /.h3 -->
+                <p class="contacts-text">Телефон для покупки карт:</p>
+                <!-- /.contacts-text -->
+                <a href="tel:+74993228580" class="link">+7 499 322-85-80</a>
+                <!-- /.link -->
+                <p class="contacts-text">Email:</p>
+                <!-- /.contacts-text -->
+                <a class="link" href="email:info@advogrand.net">info@advogrand.net</a>
+                <p class="contacts-text">Время работы:</p>
+                <!-- /.contacts-text -->
+                <p class="contacts-time">С понедельника по пятницу: 9:00&nbsp;—&nbsp;22:00 </p>
+                <!-- /.contacts-time -->
+                <p class="contacts-time">В праздничные и выходные дни: только телефонные консультации 10:00&nbsp;—&nbsp;20:00</p>
+                <!-- /.contacts-time -->
+            </div>
+            <!-- /.contacts-address -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section contacts -->
+    <footer class="footer">
+        <a href="/">
+            <img src="./images/logo-footer.png" alt="logo">
+        </a>
+    </footer>
+    <!-- /.footer -->
+    <!-- modal windows -->
+    <div class="modal-wrapper" id="modal-v">
+        <div class="modal-body">
+            <div class="modal-close">&times;</div>
+            <div class="modal-content">
+                <div class="modal-video"></div>
+                <div class="modal-card"></div>
+            </div>
+        </div>
+        <!-- /.modal-body -->
+    </div>
+    <!-- /.modal-wrapper -->
+
+    <div class="modal-wrapper" id="letter">
+        <div class="modal-body">
+            <div class="modal-close">&times;</div>
+            <div class="modal-form">
+                <form action="#">
+                    <h4 class="h4">Напишите нам письмо или задайте свой вопрос</h4>
+                    <!-- /.h4 -->
+                    <label for="name">Введите своё имя</label>
+                    <input required type="text" name="name" id="name">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input required type="tel" name="phone" id="phone">
+                    <label for="message">Сообщение или вопрос</label>
+                    <textarea name="message" id="message"></textarea>
+                    <!-- /# -->
+                    <button class="btn btn-red" type="submit">Заказать звонок консультанта</button>
+                    <!-- /.btn btn-red -->
+                    <p>Перезвоним вам в течении 5 минут</p>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-body -->
+    </div>
+    <!-- /.modal-wrapper -->
+    <div class="modal-wrapper" id="consultation">
+        <div class="modal-body">
+            <div class="modal-close">&times;</div>
+            <div class="modal-form">
+                <form action="#" id="1">
+                    <h4 class="h4">Напишите нам письмо или задайте свой вопрос</h4>
+                    <!-- /.h4 -->
+                    <label for="name">Введите своё имя</label>
+                    <input required type="text" name="name" id="name">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input required type="tel" name="phone" id="phone">
+                    <button class="btn btn-red" type="submit">Заказать звонок консультанта</button>
+                    <!-- /.btn btn-red -->
+                    <p>Перезвоним вам в течении 5 минут</p>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-body -->
+    </div>
+    <div class="modal-wrapper" id="success-error">
+        <div class="modal-body">
+            <div class="modal-content">
+                
+            </div>
+        </div>
+        <!-- /.modal-body -->
+    </div>
+    <!-- /.modal-wrapper -->
+    <!-- modal windows -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

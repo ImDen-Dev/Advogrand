@@ -1,0 +1,108 @@
+.modal
+  &-wrapper
+    display: none
+    position: fixed
+    z-index: 9999
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0,0,0, 0.7)
+    &.active-modal
+      & .modal-body
+        transform: translate(-50%, -50%) scale(1)
+  &-body
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) scale(0)
+    max-width: 470px
+    width: 100%
+    max-height: 440px
+    height: auto
+    background-color: #fff
+    padding: 30px 75px
+    overflow-y: auto
+    transition: all 0.5s ease-in-out
+    & img
+      width: 100%
+      margin-top: 32px
+    & p
+      margin-top: 20px
+      text-align: justify
+      font-size: 16px
+      font-family: $muller-lt
+  &-close
+    position: absolute
+    top: 30px
+    right: 30px
+    font-size: 32px
+    cursor: pointer
+    line-height: 19px
+  &-video
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+    border: 1px solid #ccc
+    & iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+  &-title
+    font-size: 18px
+  &-form
+    & form
+      & .btn
+        // margin-bottom: 0
+
+#modal-v
+  & .modal
+    &-body
+      max-width: 680px
+      max-height: 490px
+      padding: 30px 35px
+    &-close
+      top: 15px
+      right: 15px
+    &-card
+      display: flex
+      justify-content: 
+      align-items: center
+      margin-top: 30px
+      & img
+        max-width: 48px
+        margin: 0
+      & p
+        margin: 0 0 0 21px
+        text-transform: capitalize
+#letter
+  & .modal
+    &-body
+      max-height: 550px
+      padding: 13px 75px
+#letter, #consultation
+  & .modal
+    &-form
+      & form
+        & p
+          text-align: center
+#success-error
+  .modal
+    &-body
+      padding: 30px
+      max-width: 240px
+    &-content
+      text-align: center
+      & img
+        width: 130px
+      & p
+        text-align: center
+        padding: 0
+.error
+  color: $red
+  font-size: 13px
+  margin-top: 0
