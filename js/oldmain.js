@@ -66,11 +66,6 @@ $(document).ready(function(){
     ]
   });
 // slick slider
-
-
-let test = document.getElementsByClassName('error')
-console.log(test)
-  
   
   link.on('click',function(e){
     e.preventDefault();
