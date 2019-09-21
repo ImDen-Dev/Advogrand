@@ -3,6 +3,7 @@
   src: url("../fonts/Muller/MullerMedium.eot");
   src: local("Muller Medium"), local("MullerMedium"), url("../fonts/Muller/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerMedium.woff") format("woff"), url("../fonts/Muller/MullerMedium.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -11,6 +12,7 @@
   src: url("../fonts/Muller/MullerLight.eot");
   src: local("Muller Light"), local("MullerLight"), url("../fonts/Muller/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerLight.woff") format("woff"), url("../fonts/Muller/MullerLight.ttf") format("truetype");
   font-weight: 300;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -19,6 +21,7 @@
   src: url("../fonts/Muller/MullerBold.eot");
   src: local("Muller Bold"), local("MullerBold"), url("../fonts/Muller/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerBold.woff") format("woff"), url("../fonts/Muller/MullerBold.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -27,6 +30,7 @@
   src: url("../fonts/Muller/MullerRegular.eot");
   src: local("Muller Bold"), local("MullerBold"), url("../fonts/Muller/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muller/MullerRegular.woff") format("woff"), url("../fonts/Muller/MullerRegular.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -35,6 +39,7 @@
   src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
   src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -43,6 +48,7 @@
   src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
   src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
   font-weight: 300;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -51,6 +57,7 @@
   src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-display: swap;
   font-style: normal;
 }
 
