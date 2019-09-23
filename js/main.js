@@ -1,1 +1,284 @@
-$(document).ready(function(){function a(){$(".modal-wrapper").removeClass("active-modal").fadeOut(),$("body").removeClass("no-scroll"),$(this).has("#modal-v")&&$("#modal-v").find("iframe").remove()}function b(a){a.preventDefault();let b=$(this).attr("href"),c=$(b).offset().top;c-=f,$("html, body").stop().animate({scrollTop:c},1e3)}function c(b){$(b).submit(function(a){a.preventDefault()});let c=$(b).children("input[name=name]").val();$(b).trigger("reset"),$("#success-error .modal-content").html("<p><strong>"+c+"</strong>, \u0437\u0430\u044F\u0432\u043A\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430 </p><img src=\"./images/success.png\" alt=\"success\">"),$("#success-error").fadeIn().toggleClass("active-modal"),setTimeout(a,1500)}let d=$("nav ul li a"),f=$("nav").outerHeight(),g=$(".reviews-slider"),h=$(".reviews-links .link"),i=$(".partners-slider"),j=$(".tariffs-changes .link"),k=$(".tariffs-block"),l=$(".tariffs-all"),m="active",n=$("[data-toggle=modal]");g.slick({slidesToShow:3,slidesToScroll:1,autoplay:!0,autoplaySpeed:4e3,pauseOnHover:!0,arrows:!0,prevArrow:"<a href=\"#\" class=\"arrow arrow-prev\"></a>",nextArrow:"<a href=\"#\" class=\"arrow arrow-next\"></a>",responsive:[{breakpoint:768,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]}),i.slick({slidesToShow:4,slidesToScroll:1,infinite:!0,autoplay:!0,autoplaySpeed:4e3,pauseOnHover:!0,prevArrow:"<a href=\"#\" class=\"arrow arrow-prev\"></a>",nextArrow:"<a href=\"#\" class=\"arrow arrow-next\"></a>",responsive:[{breakpoint:768,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]}),h.on("click",function(a){a.preventDefault();const b=$(this).attr("data-target");g.slick("slickUnfilter"),h.removeClass(m),$(this).addClass(m),"communal_services"===b?g.slick("slickFilter",".communal_services"):"family"===b?g.slick("slickFilter",".family"):"realty"===b?g.slick("slickFilter",".realty"):"business"===b?g.slick("slickFilter",".business"):"health"===b?g.slick("slickFilter",".health"):"all"===b&&g.slick("slickUnfilter")}),$(".pick").on("click",function(){$(".reviews-links").slideToggle()}),j.on("click",function(){j.removeClass(m),$(this).addClass(m),$(this).hasClass("tariffs-compare-rates")?k.addClass("compare"):k.removeClass("compare")}),$(window).resize(function(){798>$(window).width()&&(k.removeClass("compare"),j.removeClass(m),l.addClass(m))}),$.getJSON("./services.json",function(a){let b=[],c=null;$.each(a,function(a,d){c++,b.push("<div class=\"modal-wrapper\" id=\"tab-"+c+"\"><div class=\"modal-body\"><div class=\"modal-close\" data-close=\"close\">&times;</div><h3 class=\"h3 modal-title\">"+a+"</h3><img src=\""+d.img+"\" alt=\"\"><p>"+d.description+"</p><p>"+d.text+"</p><p><strong>"+d.user+"</strong></p><p>"+d.conclusion+"</p></div></div>")}),$("body").append(b)}),n.on("click",function(a){a.preventDefault();let b=$(this).data("modal"),c=$(this).data("video"),d=$(this).data("text"),e=$(this).data("card");$(b).fadeIn().addClass("active-modal"),$("body").addClass("no-scroll"),"#modal-v"===b&&($(b).find(".modal-video").html(c),$(b).find(".modal-card").html("<img src=\""+e+"\"><p>"+d+"</p>"))}),$(document).on("click",".modal-close",function(){a()}),$(document).on("mouseup",".modal-wrapper",function(b){$(".modal-body").is(b.target)||0!==$(".modal-body").has(b.target).length||a()});$(d).on("click",b),$(".scroll").on("click",b),$(window).scroll(function(){let a=$(this).scrollTop();$(d).removeClass("active-link"),d.each(function(b,c){let e=$(c).attr("href"),g=$(e).offset().top-f-10,h=$(e).outerHeight();a>g&&a<g+h&&($(d).removeClass("active-link"),$(this).addClass("active-link"))})});$("form").each(function(){$(this).validate({rules:{name:{required:!0,minlength:2},phone:{required:!0,minlength:10,maxlength:13},message:{maxlength:300}},messages:{name:{required:"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043C\u044F.",minlength:"\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0435 \u043C\u0435\u043D\u0435\u0435 2 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432."},phone:{required:"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430.",minlength:"\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0435 \u043C\u0435\u043D\u0435\u0435 10 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432.",maxlength:"\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0435 \u0431\u043E\u043B\u0435\u0435 13 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432."},message:{maxlength:"\u0414\u043B\u0438\u043D\u043D\u0430 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F \u0431\u043E\u043B\u044C\u0448\u0435 300 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432\u044E"}},submitHandler:function(a){c(a)}})})});
+$(document).ready(function(){
+// variables
+  let links = $('nav ul li a'),
+      navHeight = $('nav').outerHeight(),
+      slider = $('.reviews-slider'),
+      link = $('.reviews-links .link'),
+      partners = $('.partners-slider'),
+      tariffs = $('.tariffs-changes .link'),
+      tblock = $('.tariffs-block'),
+      tall = $('.tariffs-all'),
+      active = 'active',
+      modal = $('[data-toggle=modal]');
+// variables
+// slick slider
+  slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    arrows: true,
+    prevArrow: '<a href="#" class="arrow arrow-prev"></a>',
+    nextArrow: '<a href="#" class="arrow arrow-next"></a>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+  partners.slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    prevArrow: '<a href="#" class="arrow arrow-prev"></a>',
+    nextArrow: '<a href="#" class="arrow arrow-next"></a>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+// slick slider
+  
+  link.on('click',function(e){
+    e.preventDefault();
+    const attr = $(this).attr('data-target');
+    slider.slick('slickUnfilter');
+    link.removeClass(active);
+    $(this).addClass(active);
+    if (attr === 'communal_services'){
+      slider.slick('slickFilter', '.communal_services')
+    }
+    else if (attr === 'family'){
+      slider.slick('slickFilter', '.family')
+    }
+    else if (attr === 'realty'){
+      slider.slick('slickFilter', '.realty')
+    }
+    else if (attr === 'business'){
+      slider.slick('slickFilter', '.business')
+    }
+    else if (attr === 'health'){
+      slider.slick('slickFilter', '.health')
+    }
+    else if(attr === 'all'){
+      slider.slick('slickUnfilter')
+    }
+  });
+
+  $('.pick').on('click', function(){
+    $('.reviews-links').slideToggle()
+  });
+
+  tariffs.on('click', function(){
+    tariffs.removeClass(active)
+    $(this).addClass(active)
+    if($(this).hasClass('tariffs-compare-rates')){
+      tblock.addClass('compare')
+    }
+    else{
+      tblock.removeClass('compare')
+    }
+  });
+
+// tariffs
+  $(window).resize(function(){
+    if ($(window).width() < 798){
+      tblock.removeClass('compare')
+      tariffs.removeClass(active)
+      tall.addClass(active)
+    }
+  });
+// tariffs
+
+// service
+  $.getJSON('./services.json', function(data){
+    let item = [],
+        num = null;
+    $.each(data, function(index, val){
+      num++
+      item.push('<div class="modal-wrapper" id="tab-'+ num +'"><div class="modal-body"><div class="modal-close" data-close="close">&times;</div><h3 class="h3 modal-title">'+ index + '</h3>' + '<img src="' + val.img + '" alt=""><p>'+ val.description + '</p><p>'+ val.text +'</p><p><strong>' + val.user + '</strong></p><p>'+ val.conclusion +'</p></div></div>');
+    });
+    $('body').append(item)
+  });
+// service
+
+// modal windows
+  modal.on('click',function(e){
+    e.preventDefault();
+    let modalWindow = $(this).data('modal'),
+        modalVideo = $(this).data('video'),
+        modalText = $(this).data('text'),
+        modalImg = $(this).data('card');
+    $(modalWindow).fadeIn().addClass('active-modal');
+    $('body').addClass('no-scroll');
+
+    if(modalWindow === '#modal-v'){
+      $(modalWindow).find('.modal-video').html(modalVideo);
+      $(modalWindow).find('.modal-card').html('<img src="'+ modalImg + '"><p>'+ modalText +'</p>');
+    }
+
+  });
+  
+  $(document).on('click','.modal-close',function(){
+    closeWindow()
+  });
+  
+  $(document).on('mouseup','.modal-wrapper',function(e){
+    if (!$('.modal-body').is(e.target) && $('.modal-body').has(e.target).length === 0){
+      closeWindow()
+    }
+  });
+
+  function closeWindow(){
+    $('.modal-wrapper').removeClass('active-modal').fadeOut();
+    $('body').removeClass('no-scroll')
+    
+    if($(this).has('#modal-v')){
+      $('#modal-v').find('iframe').remove();
+    }
+
+  };
+// modal windows
+
+// menu scroll
+  $(links).on('click', scrollTo);
+  $('.scroll').on('click', scrollTo);
+
+  $(window).scroll(function(){
+    let top = $(this).scrollTop();
+    $(links).removeClass('active-link');
+    links.each(function(i, el){
+      let link = $(el).attr('href'),
+      offset = $(link).offset().top - navHeight - 10,
+      height = $(link).outerHeight();
+      if (top > offset && top < offset + height ){
+        $(links).removeClass('active-link');
+        $(this).addClass('active-link');
+      }
+    });
+  });
+// menu scroll
+
+  function scrollTo(e){
+  e.preventDefault();
+  let anc = $(this).attr('href'),
+      pos = $(anc).offset().top;
+      pos = pos - navHeight;
+  $('html, body').stop().animate({scrollTop: pos}, 1000);
+  };
+
+// ajax form
+  // $('button[type=submit]').on('click', function(e){
+  //   // e.preventDefault();
+  //   let input = $(this).siblings('input[name=name]').val();
+  //   if (!input){
+  //     console.log("пустой")
+  //   }else{
+    //     console.log(input)
+  //   }
+  //   // const form = $(this).parent()
+  //   // sendAjax(form)
+  // });
+  
+  // function sendAjax(form){
+  //   $.ajax({
+    //     url: './send.php',
+  //     type: 'POST',
+  //     dataType: 'html',
+  //     data: form.serialize(),
+  //     success: function(resp){
+  //       let test = $.parseJSON(resp)
+        
+  //       console.log(test.name
+  //         )
+  //     },
+  //     error: function(resp){
+    //       console.log('no')
+    //       console.log(resp)
+    //     }
+    //   });
+    // }
+    
+    
+// ajax form
+    
+// validate form
+  $('form').each(function(){
+    $(this).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        phone:{
+          required: true,
+          minlength: 10,
+          maxlength: 13
+        },
+        message:{
+          maxlength: 300
+        }
+      },
+      messages:{
+        name: {
+          required: "Введите имя.",
+          minlength: "Пожалуйста, введите не менее 2 символов."
+        },
+        phone:{
+          required: "Введите номер телефона.",
+          minlength: "Пожалуйста, введите не менее 10 символов.",
+          maxlength: "Пожалуйста, введите не более 13 символов."
+
+        },
+        message:{
+          maxlength: "Длинна сообщения больше 300 символовю"
+        }
+      },
+      submitHandler: function(form){
+        submitForm(form)
+      }
+    });
+  });
+    
+  function submitForm(form){
+    $(form).submit(function(e){
+      e.preventDefault()
+    });
+    let name = $(form).children('input[name=name]').val();
+
+    $(form).trigger('reset');
+    $('#success-error .modal-content').html('<p><strong>' + name + '</strong>, заявка успешно отправлена </p><img src="./images/success.png" alt="success">');
+    $('#success-error').fadeIn().toggleClass('active-modal');
+    setTimeout(closeWindow, 1500);
+}    
+// validate form
+
+});
