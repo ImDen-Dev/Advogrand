@@ -1,5 +1,17 @@
 {
   "editor.tabSize": 2,
   "files.autoSave": "onWindowChange",
-  "AllAutocomplete.showCurrentDocument": false
+  "AllAutocomplete.showCurrentDocument": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ]
 }

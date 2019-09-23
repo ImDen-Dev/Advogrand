@@ -119,7 +119,7 @@ $(document).ready(function(){
 // tariffs
 
 // service
-  $.getJSON('../services.json', function(data){
+  $.getJSON('./services.json', function(data){
     let item = [],
         num = null;
     $.each(data, function(index, val){
